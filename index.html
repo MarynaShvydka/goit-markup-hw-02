@@ -5,37 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
     <!-- Шапка-->
     <header>
-      <nav>
-        <a href="./index.html"><span class="logo">Web</span>Studio</a>
-        <ul class="item-menu">
-          <li class="studio-menu"><a href="./index.html" target="_blank">Studio</a></li>
-          <li class="portfolio-menu"><a href="./portfolio.html" target="_blank">Portfolio</a></li>
-          <li class="contact-menu"><a href="">Contacts</a></li>
+      <a class="header-logo link" href="./index.html"><span class="header-web">WEB</span>STUDIO</a>
+      <nav class="header-nav">
+        <ul class="header-menu list">
+          <li><a class="header-link link" href="./index.html">Studio</a></li>
+          <li><a class="header-link link" href="./portfolio.html">Portfolio</a></li>
+          <li><a class="header-link link" href="">Contacts</a></li>
         </ul>
       </nav>
-      <address class="address">
-        <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+110001111111">+110001111111</a></li>
+      <address class="contact">
+        <ul class="contact-link list">
+          <li class="contact-item"
+            ><a class="contact-mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            ></li
+          >
+          <li class="contact-item"
+            ><a class="contact-tel link" href="tel:+110001111111">+110001111111</a></li
+          >
         </ul>
       </address>
     </header>
 
+    <!--Hero Section-->
     <main>
-      <section class="Hero-slogan">
-        <h1 class="slogan">Effective Solutions for Your Business</h1>
-        <button type="button">Order Service</button>
+      <section class="hero">
+        <h1 class="hero-slogan">Effective Solutions for Your Business</h1>
+        <button class="hero-btn" type="button">Order Service</button>
       </section>
-
+      <!--Our benefits-->
       <section class="benefits">
-        <h2>our benefits</h2>
-        <!--Later I will hide it through css-->
-        <ul class="benefits-list">
+        <ul class="benefits-list list">
           <li>
             <h3 class="benefits-title">Strategy</h3>
             <p class="benefits-text">
@@ -66,50 +79,73 @@
           </li>
         </ul>
       </section>
-
-      <section>
-        <h2>What are we doing</h2>
-        <ul>
-          <li>
-            <img src="./images/img01-min.jpg" alt=" white monitor" width="360" />
+      <!--What are we doing, the main context of this page-->
+      <section class="context">
+        <h2 class="context-subject">What are we doing</h2>
+        <ul class="context-list list">
+          <li class="context-list image">
+            <img
+              class="context-image"
+              src="./images/img01-min.jpg"
+              alt=" white monitor"
+              width="360"
+            />
           </li>
-          <li>
-            <img src="./images/img02-min.jpg" alt="mobile screen" width="360" />
+          <li class="context-list image">
+            <img
+              class="context-image"
+              src="./images/img02-min.jpg"
+              alt="mobile screen"
+              width="360"
+            />
           </li>
-          <li>
-            <img src="./images/img03-min.jpg" alt="phone in hand" width="360" />
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Our Team</h2>
-        <ul>
-          <li>
-            <img src="/images/img-min.jpg" alt="Product Designer" width="264" />
-            <h3>Mark Guerrero</h3>
-            <p>Product Designe</p>
-          </li>
-          <li>
-            <img src="./images/img1-min.jpg" alt="Frontend Developer" width="264" />
-            <h3>Tom Ford</h3>
-            <p>Frontend Developer</p>
-          </li>
-          <li>
-            <img src="./images/img2-min.jpg" alt="Marketing" width="264" />
-            <h3>Camila Garcia</h3>
-            <p>Marketing</p>
-          </li>
-          <li>
-            <img src="./images/img3-min.jpg" alt="UI Designer" width="264" />
-            <h3>Daniel Wilson</h3>
-            <p>UI Designer</p>
+          <li class="context-list image">
+            <img
+              class="context-image"
+              src="./images/img03-min.jpg"
+              alt="phone in hand"
+              width="360"
+            />
           </li>
         </ul>
       </section>
-      <footer>
-        <a href="./index.html"><span class="logo">Web</span>Studio</a>
-        <p>
+      <!--Our-team-->
+      <section class="team-section">
+        <h2 class="team-title">Our Team</h2>
+        <ul class="team-list list">
+          <li class="team-list desc">
+            <img class="team-image" src="/images/img-min.jpg" alt="Product Designer" width="264" />
+            <h3 class="team-subtitle">Mark Guerrero</h3>
+            <p class="team-text">Product Designe</p>
+          </li>
+          <li class="team-list desc">
+            <img
+              class="team-image"
+              src="./images/img1-min.jpg"
+              alt="Frontend Developer"
+              width="264"
+            />
+            <h3 class="team-subtitle">Tom Ford</h3>
+            <p class="team-text">Frontend Developer</p>
+          </li>
+          <li class="team-list desc">
+            <img class="team-image" src="./images/img2-min.jpg" alt="Marketing" width="264" />
+            <h3 class="team-subtitle">Camila Garcia</h3>
+            <p class="team-text">Marketing</p>
+          </li>
+          <li class="team-list desc">
+            <img class="team-image" src="./images/img3-min.jpg" alt="UI Designer" width="264" />
+            <h3 class="team-subtitle">Daniel Wilson</h3>
+            <p class="team-text">UI Designer</p>
+          </li>
+        </ul>
+      </section>
+      <!--Footer-->
+      <footer class="footer">
+        <a class="footer-logo link" href="./index.html"
+          ><span class="footer-web">WEB</span>STUDIO</a
+        >
+        <p class="footer-text">
           Increase the flow of customers and sales for your business with digital marketing & growth
           solutions.
         </p>
