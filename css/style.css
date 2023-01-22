@@ -22,22 +22,15 @@
 /*Main class*/
 .link {
   text-decoration: none;
-  color: currentColor;
-  font-family: var(--main-font-roboto);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(24 / 16);
-  letter-spacing: 0.02em;
 }
 .list {
   list-style: none;
-  display: flex;
-  flex-direction: row;
+}
+/*.list {
   justify-content: space-between;
   align-items: center;
-}
+}*/
 .section-title {
-  font-family: var(--main-font-roboto);
   font-size: 36px;
   line-height: calc(40 / 36);
   text-align: center;
@@ -46,19 +39,19 @@
   color: var(--navyblue-txt-cl);
 }
 .section-subtitle {
-  font-family: var(--main-font-roboto);
   font-size: 20px;
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
   color: var(--navyblue-txt-cl);
 }
 .section-text {
-  font-family: var(--main-font-roboto);
-  font-weight: 400;
-  font-size: 16px;
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--slate-txt-cl);
+}
+/* Hidden Main title H1*/
+.Main-title {
+  display: none;
 }
 
 /*=================Main Page=========================*/
@@ -106,24 +99,27 @@ header {
   gap: 40px;
 }
 .header-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
   color: var(--navyblue-txt-cl);
 }
 .header-link:hover,
 .header-link:focus {
-  text-decoration: underline;
   color: var(--ocean-txt-cl);
 }
 
 /*===========Address=============*/
 
 .contact-link {
+  font-style: normal;
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--slate-txt-cl);
 }
 .contact-link:hover,
 .contact-link:focus {
-  text-decoration: underline;
   color: var(--ocean-txt-cl);
 }
 
@@ -148,6 +144,7 @@ header {
   background: var(--color-navigation);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   /* Botton text*/
+  font-family: var(--main-font-roboto);
   font-weight: 500;
   font-size: 16px;
   line-height: calc(24 / 16);
@@ -203,7 +200,6 @@ header {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   /* Button Text */
-  font-family: var(--main-font-roboto);
   line-height: calc(24 / 16);
   align-items: center;
   text-align: center;
@@ -221,6 +217,7 @@ header {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   /*Text*/
+  font-family: 'Roboto';
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
